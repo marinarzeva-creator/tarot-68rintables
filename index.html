@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarot Printables & SVGs: Mystical Tarot Journal Ideas for Your Wedding</title>
-  <meta name="description" content="Discover how to elevate your celestial or moody wedding stationery with tarot printables, SVGs, and DIY tarot journal ideas for unique wedding keepsakes.">
+  <title>Tarot Printables & SVGs: Tarot Journal Ideas & Mystic Designs</title>
+  <meta name="description" content="Discover how to elevate your mystical practice with tarot printables, SVGs, and DIY ideas to create the ultimate tarot journal and custom decks.">
   
   <!-- Open Graph Tags -->
-  <meta property="og:title" content="Tarot Printables & SVGs | Mystical Tarot Journal & Wedding Ideas">
-  <meta property="og:description" content="From celestial seating charts to keepsake tarot guest journals—explore top-rated tarot vectors, SVGs, and printables for your modern mystical wedding.">
+  <meta property="og:title" content="Tarot Printables & SVGs | Tarot Journal Ideas">
+  <meta property="og:description" content="From celestial planner pages to your very own custom tarot deck—explore top-rated tarot vectors, SVGs, and printables for your modern mystical practice.">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://cdn.creativefabrica.com/2022/10/04/Tarot-JournalTarot-Planner-Graphics-40046762-1-1-580x441.jpg">
 
@@ -22,7 +22,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Tarot Printables & SVGs: Mystical Tarot Journal Ideas for Your Wedding Day",
+    "headline": "Tarot Printables & SVGs: Tarot Journal Ideas & Mystic Designs",
     "image": [
       "https://cdn.creativefabrica.com/2022/10/04/Tarot-JournalTarot-Planner-Graphics-40046762-1-1-580x441.jpg"
     ],
@@ -31,13 +31,13 @@
     "author": {
       "@type": "Person",
       "name": "Eleanor Vance",
-      "jobTitle": "Senior Wedding Editor"
+      "jobTitle": "Mystic Craft Editor"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Celestial Bridal Review"
+      "name": "Celestial Design Review"
     },
-    "description": "An insider editorial review on utilizing high-end tarot vector illustrations, journal templates, and SVGs for a truly unforgettable mystical wedding celebration."
+    "description": "An insider editorial review on utilizing high-end tarot vector illustrations, journal templates, and SVGs for a truly mystical crafting experience."
   }
   </script>
 
@@ -65,9 +65,9 @@
     :root {
       --bg-color: #FDFBF7;
       --text-color: #2A2624;
-      --accent-color: #5F7A6E;
-      --accent-hover: #4A6157;
-      --terracotta: #C47B62;
+      --accent-color: #FFD700; /* Yellow */
+      --accent-hover: #E5C100; /* Darker Yellow */
+      --terracotta: #FFD700; /* Yellow */
       --card-bg: #FFFFFF;
       --border-color: #E8E2D9;
       --font-heading: 'Cormorant Garamond', Georgia, serif;
@@ -103,7 +103,7 @@
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--accent-color);
+      color: #7A746E;
       margin-bottom: 12px;
     }
 
@@ -139,8 +139,8 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background-color: var(--accent-color);
-      color: #FFF;
+      background-color: var(--text-color);
+      color: var(--accent-color);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -156,7 +156,7 @@
 
     .callout-box {
       background-color: #F4EFE6;
-      border-left: 3px solid var(--accent-color);
+      border-left: 3px solid var(--text-color);
       padding: 20px;
       border-radius: 0 8px 8px 0;
       margin: 28px 0;
@@ -177,38 +177,37 @@
       margin: 32px 0 40px;
     }
 
-    .btn-primary {
+    .btn-primary, .btn-suite, .btn-trial, .btn-sticky {
       display: inline-block;
       background-color: var(--accent-color);
-      color: #FFFFFF !important;
+      color: #000000 !important;
       text-decoration: none !important;
-      font-weight: 600;
+      font-weight: 700;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-primary {
       font-size: 1rem;
       padding: 16px 32px;
       border-radius: 6px;
-      transition: background-color 0.2s ease;
-      box-shadow: 0 4px 12px rgba(95, 122, 110, 0.2);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--accent-hover);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .btn-suite {
-      display: inline-block;
-      background-color: var(--text-color);
-      color: #FFFFFF !important;
-      text-decoration: none !important;
-      font-weight: 600;
       font-size: 0.95rem;
       padding: 12px 24px;
       border-radius: 6px;
       margin-top: 16px;
-      transition: opacity 0.2s ease;
     }
 
-    .btn-suite:hover {
-      opacity: 0.9;
+    .btn-trial {
+      padding: 14px 28px;
+      border-radius: 6px;
+    }
+
+    .btn-primary:hover, .btn-suite:hover, .btn-trial:hover, .btn-sticky:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-1px);
     }
 
     /* Product Review Section */
@@ -254,7 +253,7 @@
       content: "✦";
       position: absolute;
       left: 0;
-      color: var(--terracotta);
+      color: #2A2624;
     }
 
     /* Promo Block */
@@ -277,21 +276,6 @@
     .promo-card p {
       color: #D5CFC9;
       margin-bottom: 24px;
-    }
-
-    .btn-trial {
-      display: inline-block;
-      background-color: var(--terracotta);
-      color: #FFFFFF !important;
-      text-decoration: none !important;
-      font-weight: 600;
-      padding: 14px 28px;
-      border-radius: 6px;
-      transition: opacity 0.2s ease;
-    }
-
-    .btn-trial:hover {
-      opacity: 0.9;
     }
 
     /* FAQ Section */
@@ -329,7 +313,7 @@
     summary::after {
       content: "+";
       font-size: 1.4rem;
-      color: var(--accent-color);
+      color: #2A2624;
     }
 
     details[open] summary::after {
@@ -375,11 +359,7 @@
       }
 
       .btn-sticky {
-        background-color: var(--accent-color);
-        color: #FFFFFF !important;
-        text-decoration: none !important;
         font-size: 0.85rem;
-        font-weight: 600;
         padding: 8px 16px;
         border-radius: 4px;
       }
@@ -402,14 +382,14 @@
     
     <!-- Editorial Header -->
     <header>
-      <span class="category-badge">WEDDING PLANNING • STATIONERY GUIDE</span>
-      <h1>Tarot Printables & SVGs: Mystical Tarot Journal Ideas for Your Wedding Day</h1>
-      <p class="lead-text">Infuse magical symbolism, astrology, and vintage alchemy into your wedding aesthetic. Here is how modern couples are replacing standard guest books and invitations with romantic tarot graphics.</p>
+      <span class="category-badge">JOURNALING • MYSTIC DESIGN GUIDE</span>
+      <h1>Tarot Printables & SVGs: Tarot Journal Ideas & Mystic Designs</h1>
+      <p class="lead-text">Infuse magical symbolism, astrology, and vintage alchemy into your creative practice. Here is how modern crafters are designing their own personalized tarot deck and tracking their readings with beautiful graphics.</p>
       
       <div class="author-meta">
         <div class="author-avatar">EV</div>
         <div>
-          <strong>Eleanor Vance</strong>, Senior Wedding Editor<br>
+          <strong>Eleanor Vance</strong>, Mystic Craft Editor<br>
           <time datetime="2025-02-24">February 24, 2025</time> • 6 min read
         </div>
       </div>
@@ -417,19 +397,19 @@
 
     <!-- Storytelling Intro -->
     <section class="article-content">
-      <p>There is an undeniable magic taking over wedding design this season. Couples are leaning away from cookie-cutter minimalism and embracing deep, moody, celestial storytelling. From custom "The Lovers" photo backdrops to horoscope table numbers, tarot symbolism has become the ultimate signature for edgy yet deeply romantic celebrations.</p>
+      <p>There is an undeniable magic taking over the journaling community this season. Creators are embracing deep, moody, celestial storytelling. From keeping track of daily draws in an ultimate tarot journal to crafting customized planner pages, tarot symbolism has become a staple for intuitive and mindful scrapbooking.</p>
       
-      <p>However, commissioning custom celestial artwork or bespoke hand-drawn tarot stationery from boutique design houses can easily blow through your budget, often topping $1,200 to $2,500 for a full suite. Between endless revision rounds and slow printing lead times, the process can feel overwhelming.</p>
+      <p>However, finding the right layouts or bespoke hand-drawn esoteric graphics can be tough if you don't want to draw everything from scratch. Custom artwork takes time, and buying physical boutique journals can easily blow through your budget.</p>
 
-      <p>The insider secret? High-resolution tarot SVG vectors and editable journal templates. By utilizing professionally crafted digital assets from Creative Fabrica, you can curate a luxury, boutique look—crafting customized tarot guest journals, cocktail signs, and favors—at a fraction of the cost.</p>
+      <p>The insider secret? High-resolution SVGs and editable journal templates. By utilizing professionally crafted digital assets from Creative Fabrica, you can curate a personalized, luxury aesthetic—crafting customized spreads, trackers, and printable card backs—at a fraction of the cost.</p>
 
       <div class="callout-box">
-        <p>“Tarot motifs bring an air of timeless romance and cosmic destiny to a wedding. The trick is balancing mystical graphics with crisp typography for a sophisticated, editorial finish.”</p>
+        <p>“Tarot motifs bring an air of ancient wisdom and cosmic destiny to your daily journaling. The trick is combining detailed mystic elements with a clean layout to create a space that sparks intuition.”</p>
       </div>
 
       <!-- Intro CTA Button -->
       <div class="cta-wrapper">
-        <a target="_blank" href="https://www.creativefabrica.com/ref/11057255/" class="btn-primary" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Top Category Button">Explore 10,000+ Wedding Templates & Fonts</a>
+        <a target="_blank" href="https://www.creativefabrica.com/search/ref/11057255/?query=tarot" class="btn-primary" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Top Category Button">Explore 10,000+ Tarot Designs</a>
       </div>
     </section>
 
@@ -438,24 +418,24 @@
       
       <!-- Review 1 -->
       <div class="product-review">
-        <h2>1. Tarot Journal & Tarot Planner Suite — Mystical Guest Book Concept</h2>
+        <h2>1. The Complete Tarot Planner Suite</h2>
         <img src="https://cdn.creativefabrica.com/2022/10/04/Tarot-JournalTarot-Planner-Graphics-40046762-1-1-580x441.jpg" alt="Tarot Journal and Planner Graphics" class="product-image" loading="lazy">
-        <p>If you love the idea of an interactive wedding guest book, this printable tarot journal suite is an absolute dream. Designed with celestial iconography and elegant line art, it allows guests to leave written wishes, advice, and cosmic readings for your union.</p>
-        <p>The layout works seamlessly as a physical printed keepsake binder or individual guest prompt sheets placed on reception tables alongside metallic pens and real tarot cards.</p>
+        <p>If you love the idea of an interactive reading, this printable <strong>tarot ournaltarot planner</strong> suite is an absolute dream. Designed with celestial iconography and elegant line art, it allows you to easily track your daily pulls, moon phases, and cosmic insights.</p>
+        <p>The layout works seamlessly as a physical printed keepsake binder or digital planner import.</p>
         <ul class="feature-list">
-          <li>Includes structured journal pages, prompt spreads, and artistic card borders.</li>
-          <li>High-resolution print-ready files perfect for heavy cardstock.</li>
-          <li>Ideal for celestial, autumnal, or gothic romantic wedding concepts.</li>
+          <li>Includes structured journal pages, prompt spreads, and artistic borders.</li>
+          <li>High-resolution print-ready files perfect for heavy paper.</li>
+          <li>Ideal for tracking personal growth and spiritual readings.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/tarot-journaltarot-planner-2/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/tarot-journaltarot-planner-2/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get This Template on Creative Fabrica →</a>
       </div>
 
       <!-- Review 2 -->
       <div class="product-review">
-        <h2>2. Ultimate Tarot Journal Template — Editable Canva & Print Layout</h2>
+        <h2>2. Ultimate Tarot Journal Template — Editable Canva Layout</h2>
         <img src="https://cdn.creativefabrica.com/2025/05/19/Ultimate-Tarot-Journal-For-Canva-KDP-Graphics-122407403-1-1-580x386.jpg" alt="Ultimate Tarot Journal Template" class="product-image" loading="lazy">
-        <p>For brides who want total customization without needing advanced design software, this Canva-compatible tarot journal kit is a game changer. Swap colors to match your wedding palette, change fonts, and insert your personal monogram.</p>
-        <p>We recommend printing a custom deck guide for your bar menu or turning these journal templates into personalized wedding favor booklets for your guests to take home.</p>
+        <p>For those who want total customization without needing advanced design software, this <strong>ultimate tarot journal</strong> is a game changer. Swap colors, change fonts, and add your personal touch using Canva.</p>
+        <p>We recommend printing a custom workbook format to keep track of your favorite spreads and interpretations.</p>
         <ul class="feature-list">
           <li>Fully editable in Canva (free or pro accounts).</li>
           <li>Clean line work with vintage-inspired botanical accents.</li>
@@ -466,127 +446,125 @@
 
       <!-- Review 3 -->
       <div class="product-review">
-        <h2>3. Zodiac Signs & Horoscope Tarot PNG Set — Seating Chart Accents</h2>
+        <h2>3. Zodiac Tarot Card PNG Set</h2>
         <img src="https://cdn.creativefabrica.com/2024/07/19/Zodiac-signs-Tarot-card-horoscope-png-Graphics-102238601-1-1-580x387.png" alt="Zodiac signs Tarot card horoscope PNG" class="product-image" loading="lazy">
-        <p>Group your guests by their astrological element or star sign! This versatile zodiac tarot bundle allows you to assign tables by astrological signs (e.g., "Table Scorpio" or "The Sun").</p>
-        <p>The transparent PNG format means you can effortlessly drop these illustrations onto gold foil backgrounds, acrylic sign templates, or handmade linen paper.</p>
+        <p>Blend astrology into your practice! This versatile <strong>zodiac tarot card</strong> bundle allows you to incorporate star signs directly into your spreads or planner pages.</p>
+        <p>The transparent PNG format means you can effortlessly drop these illustrations onto digital journals, stickers, or custom printables.</p>
         <ul class="feature-list">
-          <li>Includes all 12 zodiac symbols styled as antique tarot cards.</li>
+          <li>Includes all 12 zodiac symbols styled as antique cards.</li>
           <li>High-resolution transparent backgrounds for easy layering.</li>
-          <li>Great for table numbers, place cards, and welcome boards.</li>
+          <li>Great for personalized birthday or birth chart readings.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/zodiac-signs-tarot-card-horoscope-png/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/zodiac-signs-tarot-card-horoscope-png/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get These Elements on Creative Fabrica →</a>
       </div>
 
       <!-- Review 4 -->
       <div class="product-review">
         <h2>4. Celestial Tarot Illustrations — Delicate Gold & Black Vector Art</h2>
         <img src="https://cdn.creativefabrica.com/2020/07/18/Celestial-Tarot-Illustrations-Graphics-4661789-1-1-580x387.jpg" alt="Celestial Tarot Illustrations" class="product-image" loading="lazy">
-        <p>If your wedding aesthetic is centered around starlight, moon phases, and refined line work, this collection of celestial tarot vectors is essential. Featuring delicate hand-drawn suns, moons, and hands, it brings an organic elegance to invitation suites.</p>
-        <p>Use these graphics to detail your RSVP cards, seal wax envelopes, or accent your ceremony program cards.</p>
+        <p>If your aesthetic is centered around starlight, moon phases, and refined line work, this collection of <strong>celestial tarot illustrations</strong> is essential. Featuring delicate hand-drawn suns, moons, and hands, it brings organic elegance to your pages.</p>
+        <p>Use these graphics to create stunning section dividers, stickers, or cover art for your grimoire.</p>
         <ul class="feature-list">
-          <li>Vector files scales up seamlessly for large-format wedding signage.</li>
+          <li>Vector files scale up seamlessly without losing quality.</li>
           <li>Includes sunbursts, crescent moons, and ethereal hand gestures.</li>
           <li>Pairs beautifully with romantic serif typography.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/celestial-tarot-illustrations/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/celestial-tarot-illustrations/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get This Vector Kit on Creative Fabrica →</a>
       </div>
 
       <!-- Review 5 -->
       <div class="product-review">
-        <h2>5. Feminine Mystic Tarot Clipart — Romantic Soft Botanical Elements</h2>
+        <h2>5. Feminine Mystic Tarot Clipart</h2>
         <img src="https://cdn.creativefabrica.com/2025/10/23/Feminine-Tarot-Cards-Mystic-Clipart-Graphics-133776055-1-1-580x387.png" alt="Feminine Tarot Cards Mystic Clipart" class="product-image" loading="lazy">
-        <p>Soft, graceful, and enchanting, this feminine tarot clipart collection replaces heavy dark outlines with delicate line work and ethereal floral motifs. Perfect for spring and summer celestial weddings.</p>
-        <p>We love seeing these graphics used on wedding menu cards, signature cocktail signs ("The Lovers Tonic"), and custom matchbook favors.</p>
+        <p>Soft, graceful, and enchanting, this <strong>tarot cards mystic</strong> clipart collection replaces heavy dark outlines with delicate line work and ethereal floral motifs. Perfect for a calming, intuitive journal vibe.</p>
+        <p>We love seeing these graphics used for digital scrapbooking, meditation guides, and self-care tracking.</p>
         <ul class="feature-list">
           <li>Subtle, feminine line art with celestial and botanical details.</li>
           <li>Ready-to-use PNG elements with crisp resolution.</li>
           <li>Complements soft blush, sage green, and cream color schemes.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/feminine-tarot-cards-mystic-clipart/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/feminine-tarot-cards-mystic-clipart/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get This Clipart on Creative Fabrica →</a>
       </div>
 
       <!-- Review 6 -->
       <div class="product-review">
-        <h2>6. Skeleton Tarot Card SVG Bundle — Edgy & Gothic Romance</h2>
+        <h2>6. Skeleton Tarot Card SVG Bundle</h2>
         <img src="https://cdn.creativefabrica.com/2025/07/28/Skeleton-Tarot-Card-Halloween-SVG-Bundle-Graphics-127170460-1-1-580x387.png" alt="Skeleton Tarot Card Halloween SVG Bundle" class="product-image" loading="lazy">
-        <p>Planning an October wedding, a "Till Death Do Us Part" theme, or a moody gothic celebration? This skeleton tarot card SVG kit delivers dramatic, high-contrast imagery with a romantic edge.</p>
-
-        <p>Because these are vector SVGs, you can easily load them into Cricut or Silhouette machines to craft vinyl welcome signage, custom tote bag favors, or laser-engraved wooden table markers.</p>
+        <p>If you prefer a darker, more dramatic aesthetic, this <strong>skeleton tarot card</strong> kit delivers high-contrast gothic imagery. It's the perfect way to add an edgy, classic vibe to your crafting projects.</p>
+        <p>Because these are vector files, you can easily load them into Cricut or Silhouette machines to craft vinyl journal covers, custom tote bags, or even altar decorations.</p>
         <ul class="feature-list">
           <li>Scalable SVG files optimized for vinyl cutting and foil pressing.</li>
-          <li>Distinctive "Till Death" aesthetic with detailed skeletal figures.</li>
-          <li>Includes EPS, PNG, and SVG vector formats.</li>
+          <li>Distinctive aesthetic with detailed skeletal figures.</li>
+          <li>Includes EPS, PNG, and SVG formats.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/skeleton-tarot-card-halloween-svg-bundle/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/skeleton-tarot-card-halloween-svg-bundle/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get These SVGs on Creative Fabrica →</a>
       </div>
 
       <!-- Review 7 -->
       <div class="product-review">
-        <h2>7. Vintage Tarot Card Overlays — Authentic Antique Aesthetic</h2>
+        <h2>7. Vintage Tarot Card Overlays</h2>
         <img src="https://cdn.creativefabrica.com/2023/03/24/Vintage-Tarot-Card-SVG-and-PNG-Overlays-Graphics-65206617-1-1-580x386.jpg" alt="Vintage Tarot Card SVG and PNG Overlays" class="product-image" loading="lazy">
-        <p>If you prefer an authentic vintage look over clean modern vectors, this overlay kit adds distress, aged textures, and classical line work to your tarot creations.</p>
-
-        <p>Design custom "The Lovers" engagement party invitations or print them onto deckled-edge cotton paper for an heirloom quality that looks like an old-world artifact.</p>
+        <p>For an authentic antique look, adding a distressed <strong>tarot card svg</strong> or overlay to your digital layouts provides aged textures and classical line work.</p>
+        <p>Design your own custom interpretation cards or print them onto deckled-edge cotton paper to give your spreads an heirloom quality that looks like a genuine mystic artifact.</p>
         <ul class="feature-list">
           <li>Distressed vintage card frames and card back graphics.</li>
-          <li>Versatile PNG overlays for Photoshop, Canva, or Illustrator.</li>
+          <li>Versatile PNG and SVG overlays for Photoshop, Canva, or Illustrator.</li>
           <li>Gives printables an authentic 19th-century mystical feel.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/vintage-tarot-card-svg-and-png-overlays/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/vintage-tarot-card-svg-and-png-overlays/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get These Overlays on Creative Fabrica →</a>
       </div>
 
       <!-- Review 8 -->
       <div class="product-review">
-        <h2>8. Major & Minor Arcana Tarot Planner Kit — Comprehensive Wedding Details</h2>
+        <h2>8. Major Arcana Tarot Planner Kit</h2>
         <img src="https://cdn.creativefabrica.com/2023/01/23/Tarot-Cards-Major-Minor-Arcana-Planner-Graphics-58641958-1-1-580x387.jpg" alt="Tarot Cards Major Minor Arcana Planner" class="product-image" loading="lazy">
-        <p>A complete graphic package containing symbols and card structures for both Major and Minor Arcana. This exhaustive kit gives you endless options for designing multi-page wedding itineraries, tarot card seating charts, and couple timeline cards.</p>
-        <p>It’s the ultimate toolkit for DIY brides or stationery designers looking to offer bespoke mystical stationery options.</p>
+        <p>A complete graphic package containing symbols and card structures for the <strong>tarot cards major</strong> and minor arcana. This exhaustive kit gives you endless options for designing detailed tarot meaning guides, study pages, and card-of-the-day inserts.</p>
+        <p>It’s the ultimate toolkit for DIY crafters or digital planner designers looking to offer bespoke mystical stationery.</p>
         <ul class="feature-list">
           <li>Comprehensive library of tarot motifs and full card layouts.</li>
           <li>Clean, high-resolution vector artwork.</li>
           <li>Includes commercial usage license for stationery designers.</li>
         </ul>
-        <a target="_blank" href="https://www.creativefabrica.com/product/tarot-cards-major-minor-arcana-planner/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Personalize This Suite on Creative Fabrica →</a>
+        <a target="_blank" href="https://www.creativefabrica.com/product/tarot-cards-major-minor-arcana-planner/ref/11057255/?sharedfrom=pdp" class="btn-suite" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Product Button">Get The Full Kit on Creative Fabrica →</a>
       </div>
 
     </section>
 
     <!-- Editorial Promo / Hack Block -->
     <section class="promo-card">
-      <h3>Editor's Budget Secret: Download These Templates Free</h3>
-      <p>Why pay individual commercial license fees for every graphic? Creative Fabrica offers an exclusive All-Access Free Trial that includes 10 free downloads of high-resolution SVGs, fonts, and Canva wedding suites.</p>
-      <a target="_blank" href="https://www.creativefabrica.com/ref/11057255/" class="btn-trial" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Promo Block CTA">Unlock 10 Free Downloads on Creative Fabrica</a>
+      <h3>Crafter's Budget Secret: Download These Templates Free</h3>
+      <p>Why pay individual commercial license fees for every graphic? Creative Fabrica offers an exclusive All-Access Free Trial that includes 10 free downloads of high-resolution SVGs, fonts, and Canva journal templates.</p>
+      <a target="_blank" href="https://www.creativefabrica.com/search/ref/11057255/?query=tarot" class="btn-trial" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Promo Block CTA">Unlock 10 Free Downloads on Creative Fabrica</a>
     </section>
 
-    <!-- Bridal FAQ -->
+    <!-- Tarot Craft FAQ -->
     <section class="faq-section">
-      <h2>Bridal Stationery FAQ</h2>
+      <h2>Tarot Journaling FAQ</h2>
       
       <details>
-        <summary>Can I edit these tarot journal templates in Canva?</summary>
-        <p>Yes! Many of the tarot journal and planner suites are provided as Canva template links or high-res PDF/PNG files. You can effortlessly add your names, wedding date, or change text using a free Canva account.</p>
+        <summary>Can I edit these templates in Canva?</summary>
+        <p>Yes! Many of the journal and planner suites are provided as Canva template links or high-res PNG files with transparent backgrounds. You can easily insert text and graphics using a free Canva account.</p>
       </details>
 
       <details>
-        <summary>What paper weight is best for printing tarot cards at home?</summary>
-        <p>For printing DIY tarot cards or tarot guest book pages, we recommend heavy cardstock with a density of 300 gsm (110 lb) or higher. A subtle linen or matte finish gives the graphics a luxurious, tactile feel.</p>
+        <summary>What paper weight is best for printing custom decks at home?</summary>
+        <p>For printing DIY cards or planner pages, we recommend heavy cardstock with a density of 300 gsm (110 lb) or higher. A subtle linen or matte finish gives the graphics a luxurious, tactile feel.</p>
       </details>
 
       <details>
-        <summary>Should I print tarot welcome boards at home or commercially?</summary>
-        <p>For smaller items like table numbers, place cards, and journal prompts, printing at home on a quality inkjet printer works wonderfully. For large seating charts or welcome signs (18x24 inches or larger), upload your exported SVG/PDF file to a local print shop or online printer.</p>
+        <summary>How can I use SVG files for my journal?</summary>
+        <p>SVG files are perfect for creating custom stickers, vinyl decals for your journal cover, or creating stencils using cutting machines like a Cricut or Silhouette.</p>
       </details>
 
       <details>
         <summary>Do these digital files include commercial licenses?</summary>
-        <p>Yes, assets downloaded through Creative Fabrica come with a commercial license, allowing you (or your wedding planner) to design and print stationery items legally without copyright issues.</p>
+        <p>Yes, assets downloaded through Creative Fabrica typically come with a commercial license, allowing you to design and print planners legally if you wish to sell your physical crafts.</p>
       </details>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>© 2025 Celestial Bridal Review. All rights reserved.</p>
+      <p>© 2025 Celestial Design Review. All rights reserved.</p>
       <p style="margin-top: 8px; font-size: 0.8rem; color: #8C857E;">Disclosure: This editorial article contains affiliate links. If you choose to download or purchase through these links, we may earn a small commission at no extra cost to you.</p>
     </footer>
 
@@ -594,8 +572,8 @@
 
   <!-- Sticky Mobile Bar -->
   <div class="sticky-bar">
-    <span class="sticky-text">10 Free Tarot & Wedding Downloads</span>
-    <a target="_blank" href="https://www.creativefabrica.com/ref/11057255/" class="btn-sticky" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Sticky Mobile CTA">Claim Free</a>
+    <span class="sticky-text">10 Free Tarot Downloads</span>
+    <a target="_blank" href="https://www.creativefabrica.com/search/ref/11057255/?query=tarot" class="btn-sticky" rel="sponsored nofollow" data-umami-event="Click Creative Fabrica" data-umami-event-type="Sticky Mobile CTA">Claim Free</a>
   </div>
 
 </body>
